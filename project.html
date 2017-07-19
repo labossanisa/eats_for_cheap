@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<title>EatsforCheap</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick=" fa fa-remove w3_close()" class="w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>EA👇🏽S for CHEAP</b></h3>
+  </div>
+    
+    <head>
+<style> 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<p>SEARCH:</p>
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+  <div class=" w3-bar-block w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="test.html" class="w3-bar-item w3-button">Drinks</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Kids <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="kids.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>3-5</a>
+        <a href="kids.html" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>6-9</a>
+        <a href="kids.html" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>10-12</a>
+        <a href="kids.html" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>13+</a>
+    </div>
+    <a href="breakfast.html" class="w3-bar-item w3-button">Breakfast and Lunch</a>
+    <a href="dinner.html" class="w3-bar-item w3-button">Dinner</a>
+    <a href="dessert.html" class="w3-bar-item w3-button">Desserts</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">About Us</a> 
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">GWCSummer</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">ForCheap💵</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <form class="w3-container w3-card-4" action="/action_page.php">
+  <h1>Select Your Desired Food</h1>
+
+  <select class="w3-select" name="option">
+    <option value="" disabled selected>Choose your category</option>
+    <option value="1">Drinks</option>
+    <option value="2">Kids</option>
+    <option value="3">Breakfast</option>
+    <option value="4">Lunch</option>
+    <option value="5">Dinner</option>
+    <option value="6">Desserts</option>
+  </select>
+
+  <p><button class="w3-btn w3-teal">Search</button></p>
+</form>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Home</p>
+    <p class="w3-right">
+  </header>
+
+  <!-- Image header -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">EA👇🏽S</span> for CHEAP.</h1>
+    <p>FINDING F🍕🍕D with F🍬N</p>
+    <img src="C:/Users/GirlsWhoCode/Pictures/Saved Pictures/food2.jpg" alt="food" class="w3-image" width="1108" height="1108">
+  </header>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-padding-large w3-black w3-small w3-center" id="footer">
+      <div class="w3-section">
+      <div class="w3-col s4">
+        <h4>More Information.</h4>    
+        <p>Big Recipes.</p>
+          <hr style="width:300px" class="w3-opacity w3-center">
+        <form action="/action_page.php" target="_blank">
+            <p><a href="http://allrecipes.com/recipes/17235/everyday-cooking/allrecipes-magazine-recipes/" title="AllR" target="_blank" class="w3-hover-opacity">AllRecipes</a></p>
+            <p><a href="http://www.foodnetwork.com/recipes" title="FoodN" target="_blank" class="w3-hover-opacity">FoodNetwork</a></p>
+            <p><a href="http://www.yummly.co/browse/recommended" title="Yumm" target="_blank" class="w3-hover-opacity">Yummly</a></p>
+            <p><a href="https://www.chowhound.com/recipes" title="Chow" target="_blank" class="w3-hover-opacity">Chow</a></p>
+        </form>
+      </div>
+
+
+     
+          
+     <div class="w3-col s4 ">
+        <h4>GirlsWhoCodeSummer</h4>
+        <p><i class="fa fa-fw fa-female"></i> GirlsWhoCode</p>
+        <p> <i class="fa fa-fw fa-globe" "w3-hover-opacity"></i><a href=https://girlswhocode.com/contact-us/ title="GWCMail" target="_blank" >Contact</a></p>
+        <br>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-64 w3-padding-large">MADE WITH <a href="https://girlswhocode.com/" title="GWC" target="_blank" class="w3-hover-opacity">LOVE</a></div>
+
+  
+    
+ <!-- End page content -->
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">About Us</h2>
+        
+     <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+          <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="C:/Users/GirlsWhoCode/Downloads/chy&jan.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Chyna Thomas and Janiyah Joseph</b></p>
+        <p>Janiyah- I'm a rising 16 year old junior. I'm fun to be aroun, shy, but talk alot. I love food, I like to read and write. I also love music.</p> 
+        <p>Chyna- I'm a senior at Miller Grove High School. I'm kind and friendly, smart and get good grades. My focuses are my school and future.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="C:/Users/GirlsWhoCode/Downloads/zai.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Zainam Goodloe-Vintes</b></p>
+        <p>Hello, I am a 16 year old junior that attends KIPP Atlanta Collegiate. I am silly, shy, i like to stay to myself and i am also very grateful for this oppurtunity because i know it will help me in the future.     </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="C:/Users/GirlsWhoCode/Downloads/FullSizeRender (1).jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Anisa Labossiere</b></p>
+        <p>Hi, I am a 16 year old rising junior at Langston Hughes High School. I am a creative and open-minded person who believes that this opportunity was a great chance to open my mind to more pathways in my life. It was a very fun experience.</p>
+      </div>
+    </div>
+      <div class="w3-third w3-container">
+      <img src="C:/Users/GirlsWhoCode/Downloads/IMG_6503.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Deja Goodloe-Vintes</b></p>
+        <p>I am a 16 year old rising junior attending KIPP Atlanta Collegiate.I am very appreciative of this oppurtunity given to me by Girls Who Code and I have experienced and opened up to more learnings. </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// 
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
